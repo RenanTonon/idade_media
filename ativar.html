@@ -1,0 +1,23 @@
+<meta charset ="UTF-8">
+
+<html>
+<script>
+alert("Vamos calcular a media dos familiares ou participantes")
+var quantidade = parseInt(prompt("Informe o numero de participantes do calculo: "))
+var total = 0
+var soma = 0
+while ( total < quantidade){
+	var nome = prompt("informe o nome do familiar :");
+	var idade = parseFloat(prompt("informe a idade do familiar :"))
+	var funcao = prompt("Qual função esse partiparte desempenha em sua vida: ex: irmão ; filho ; amigo")
+	document.write("Nome do participante é " + nome + " e tem " + idade + " anos " + "<br>" );
+	document.write("Função : " + funcao)
+	document.write("<br><br>")
+	soma = soma + idade
+	total++
+}
+var media = parseInt(soma / quantidade)
+document.write("Há média das idades aproximadamente é : ")
+document.write(media)
+</script>
+</html>
